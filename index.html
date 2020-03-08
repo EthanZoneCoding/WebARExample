@@ -5,12 +5,7 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
     <!-- create your content here. just a box for now -->
-    <!-- define your gltf asset -->
-    <a-assets>
-      <a-asset-item id="text" src="text.gltf"></a-asset-item>
-    </a-assets>
-    <!-- use your gltf model -->
-    <a-entity gltf-model="##text"></a-entity>
+    <a-text value="Hello, World!"></a-text>
     <!-- define a camera which will move according to the marker position -->
     <a-marker-camera type='pattern' url='pattern-marker.patt'></a-marker-camera>
   </a-scene>
